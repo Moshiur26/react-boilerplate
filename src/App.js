@@ -1,3 +1,4 @@
+import MainRouter from './MainRouter'
 import theme from './theme'
 import { ThemeProvider } from '@material-ui/styles'
 import {BrowserRouter} from 'react-router-dom'
@@ -8,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <ThemeProvider theme={theme}>
-        <h1>Hello This is Moshiur</h1>
+        <MainRouter/> 
       </ThemeProvider>
   </BrowserRouter>
   );
