@@ -1,16 +1,16 @@
-// import './App.css';
+import theme from './theme'
+import { ThemeProvider } from '@material-ui/styles'
+import {BrowserRouter} from 'react-router-dom'
+
 import { hot } from 'react-hot-loader'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <h4>Hellow React</h4>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <h1>Hello This is Moshiur</h1>
+      </ThemeProvider>
+  </BrowserRouter>
   );
 }
 
