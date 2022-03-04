@@ -4,7 +4,7 @@ import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 import Typography from '@material-ui/core/Typography'
-import homeImg from './../assets/images/home_1.jpg'
+import homeImg from './../assets/images/home.jpg'
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -32,7 +32,7 @@ export default function Home(){
           <CardMedia className={classes.media} image={homeImg} />
           <CardContent>
             <Typography variant="body1" component="p">
-              Welcome to the MERN Skeleton home page.
+              Welcome to the React home page.
             </Typography>
           </CardContent>
         </Card>
