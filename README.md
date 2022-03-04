@@ -72,7 +72,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### React Router
-yarn add react-router react-router-dom
+`yarn add react-router react-router-dom`
 
 ### Material-UI
-yarn add @material-ui/core @material-ui/icons
+`yarn add @material-ui/core @material-ui/icons`
+
+### React-Hot-Loader
+`yarn add react-hot-loader @hot-loader/react-dom`
