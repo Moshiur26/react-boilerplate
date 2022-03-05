@@ -79,3 +79,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### React-Hot-Loader
 `yarn add react-hot-loader @hot-loader/react-dom`
+
+### Axios to make http request
+`yarn add axios`
