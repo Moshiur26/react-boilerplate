@@ -52,16 +52,19 @@ export default function Signin(props) {
             password: values.password || undefined 
         }
 
-        postLogin(user).then((data) => {
-            if (data.error) {
-                setValues({ ...values, error: data.error })
+        postLogin(user).then((response) => {
+            console.log(">>response: ", response)
+
+            if (response.success === false) {
+                setValues({ ...values, error: response.message })
             } else {
-                auth.authenticate(data, () => {
+                auth.authenticate(response.data, () => {
                     setValues({ ...values, error: '', redirectToReferrer: true })
                 })
-                console.log(">>data: ", data)
             }
-        })
+        }).catch(e => {
+            console.log(">>>e: ", e);
+        });
     }
 
     // const {from} = props.location.state || {
